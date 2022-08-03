@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聊天机器人</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- 接口
+    域名：developer.duyiedu.com
+    url:http://developer.duyiedu.com/edu/turing/chat
+    method:get
+    -->
+
+    <!--
+        1.外框
+            2.顶部
+            3.内容
+            4.底部
+               4.1输入框
+               4.2按钮  -->
+    <div class="wrapper">
+        <h3>小度机器人</h3>
+        <div class="content clearFloat">
+            <div class="user  ">
+                <img src="./img/dog1.jpg" class="avator " >
+                <div class="text ">今天星期几今天星期几今天星期几今天星期几今天星期几今天星期几</div>
+            </div>
+            <div class="root ">
+                <img src="./img/3.png" class="avator " >
+                <div class="text ">今天星期日</div>
+            </div>
+            
+            <div></div>
+        </div>
+        <div class="bottom">
+            <input type="text" class="message">
+            <button class="send">发送</button>
+        </div>
+    </div>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

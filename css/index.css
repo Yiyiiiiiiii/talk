@@ -1,0 +1,139 @@
+/* ! important 
+行间
+id
+calss/伪类:hover
+标签（/伪元素） */
+/* .fatherdiv{
+    width: 200px;
+}
+
+.sondiv{
+width: calc(100% - 10px);
+width: 190px;
+}
+vh\vw */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.clearFloat::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/* 全局的一个伪类 */
+::-webkit-scrollbar{
+    width: 0;
+}
+/* 外框 */
+.wrapper{
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+}
+/* 顶部 */
+.wrapper h3{
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #ccc;
+}
+/* 内容 */
+.content{
+    height: calc(100vh - 80px);
+    background-color: #eee;
+    min-height: 250px;
+    overflow-y: scroll;
+}
+
+.root{
+    width: 100%;
+    margin: 5px;
+    float: left
+}
+.user{
+    width: 100%;
+    margin: 5px;
+    float: right;
+
+}
+.avator{
+    width: 30px;
+    height: 30px;
+}
+.user .avator{
+    float: right;
+    
+}
+.root .avator{
+    float: left;
+    
+}
+.text{
+    max-width: 50%;
+    margin: 0 5px;
+    padding: 0 5px;
+    border-radius: 5px;
+    line-height: 25px;
+    position: relative;
+    /* 强制换行 */
+    word-break: break-all;
+}
+.text::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    position: absolute;
+}
+.user .text{
+    background-color: greenyellow;
+    float: right;
+    
+}
+.user .text::after{
+    border-left-color: greenyellow;
+    top: 10px;
+    right: -10px;
+
+}
+.root .text{
+    background-color: #fff;
+    float: left;
+}
+.root .text::after{
+    border-right-color: #fff;
+    top: 10px;
+    left: -10px;
+}
+
+
+/* 底部 */
+.wrapper .bottom{
+    height: 40px;
+    background-color: #ddd;
+    text-align: center;
+    line-height: 40px;
+}
+
+.bottom .message{
+    width: 500px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 0 5px;
+}
+.bottom .send{
+    width: 60px;
+    height: 30px;
+
+}
